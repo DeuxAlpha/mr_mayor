@@ -3,7 +3,6 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Globalization;
-using DefaultNamespace;
 using UnityEngine;
 using Debug = UnityEngine.Debug;
 
