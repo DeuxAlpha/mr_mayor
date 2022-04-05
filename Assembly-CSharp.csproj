@@ -46,14 +46,67 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\MouseHeadLook.cs" />
      <Compile Include="Assets\Scripts\SelfIdentifier.cs" />
+     <Compile Include="Assets\hazelwoodloft\Geometry\Materials\Floor_reflective_data\Floor_ReflectionScriptCamera.cs" />
+     <Compile Include="Assets\hazelwoodloft\Scripts\Animated_Texure_birds.cs" />
+     <Compile Include="Assets\hazelwoodloft\Standard Assets\Character Controllers\Sources\Scripts\CharacterMotor.cs" />
      <Compile Include="Assets\Scripts\Body.cs" />
-     <Compile Include="Assets\Scripts\GameManager.cs" />
+     <Compile Include="Assets\hazelwoodloft\Geometry\Materials\Floor_reflective_data_MirrorReflection\MirrorReflection.cs" />
      <Compile Include="Assets\Scripts\SimplePlayerController.cs" />
+     <Compile Include="Assets\hazelwoodloft\Standard Assets\Character Controllers\Sources\Scripts\ThirdPersonController.cs" />
      <Compile Include="Assets\Scripts\BodyRotationRequestDirection.cs" />
+     <Compile Include="Assets\hazelwoodloft\Scripts\LightMapData.cs" />
+     <Compile Include="Assets\hazelwoodloft\Standard Assets\Character Controllers\Sources\Scripts\PlatformInputController.cs" />
+     <Compile Include="Assets\hazelwoodloft\Standard Assets\Character Controllers\Sources\Scripts\FPSInputController.cs" />
+     <Compile Include="Assets\hazelwoodloft\Scripts\LightmappingManager.cs" />
+     <Compile Include="Assets\hazelwoodloft\Geometry\Materials\Floor_reflective_data_MirrorReflection\Rotate.cs" />
+     <Compile Include="Assets\hazelwoodloft\Scripts\LightMapDataContainerObject.cs" />
+     <Compile Include="Assets\hazelwoodloft\Geometry\Materials\Floor_reflective_data\Floor_PlanarReflection.cs" />
+     <Compile Include="Assets\Scripts\GameManager.cs" />
      <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
      <Compile Include="Assets\Scripts\QuadrantManager.cs" />
      <Compile Include="Assets\Scripts\Intro.cs" />
+     <Compile Include="Assets\hazelwoodloft\Standard Assets\Character Controllers\Sources\Scripts\MouseLook.cs" />
      <Compile Include="Assets\Scripts\KeyboardMovementBehaviour.cs" />
+     <Compile Include="Assets\hazelwoodloft\Standard Assets\Character Controllers\Sources\Scripts\ThirdPersonCamera.cs" />
+     <None Include="Assets\hazelwoodloft\Hard Surface\HardSurface Shaders\HardSurfacePro Hidden Front Opaque.shader" />
+     <None Include="Assets\hazelwoodloft\Geometry\Materials\Floor_reflective_data\floor_AngryInclude.cginc" />
+     <None Include="Assets\hazelwoodloft\Hard Surface\HardSurface Shaders\HardSurface Free Transparent Diffuse.shader" />
+     <None Include="Assets\hazelwoodloft\Hard Surface\HardSurface Shaders\HardSurface Free Transparent Bump.shader" />
+     <None Include="Assets\hazelwoodloft\Hard Surface\HardSurface Shaders\HardSurface Free Cut Out Bump.shader" />
+     <None Include="Assets\hazelwoodloft\Hard Surface\HardSurface Shaders\HardSurfacePro Hidden Front Opaque Diffuse.shader" />
+     <None Include="Assets\hazelwoodloft\Hard Surface\HardSurface Shaders\HardSurfacePro Hidden Front Opaque Specular.shader" />
+     <None Include="Assets\hazelwoodloft\Shaders\glass_correct3.shader" />
+     <None Include="Assets\hazelwoodloft\Hard Surface\HardSurface Shaders\HardSurfacePro Hidden Front Cut Out Opaque Diffuse.shader" />
+     <None Include="Assets\hazelwoodloft\Hard Surface\HardSurface Shaders\HardSurface Free Opaque Diffuse.shader" />
+     <None Include="Assets\hazelwoodloft\Hard Surface\HardSurface Shaders\HardSurfacePro Hidden Front Opaque Bump.shader" />
+     <None Include="Assets\hazelwoodloft\Hard Surface\HardSurface Shaders\HardSurface Free Opaque Specular.shader" />
+     <None Include="Assets\hazelwoodloft\Hard Surface\HardSurface Shaders\HardSurface Free Transparent.shader" />
+     <None Include="Assets\hazelwoodloft\Hard Surface\HardSurface Shaders\HardSurfacePro Hidden Front Transparent.shader" />
+     <None Include="Assets\hazelwoodloft\Hard Surface\HardSurface Shaders\HardSurfacePro Hidden Front Transparent Specular.shader" />
+     <None Include="Assets\hazelwoodloft\Hard Surface\HardSurface Shaders\HardSurfacePro Hidden Front Cut Out Specular.shader" />
+     <None Include="Assets\hazelwoodloft\Hard Surface\HardSurface Shaders\HardSurfacePro Hidden Front Cut Out Opaque Specular.shader" />
+     <None Include="Assets\hazelwoodloft\Hard Surface\HardSurface Shaders\HardSurfacePro Hidden Front Cut Out Diffuse.shader" />
+     <None Include="Assets\hazelwoodloft\Shaders\glass_correct2.shader" />
+     <None Include="Assets\hazelwoodloft\Hard Surface\HardSurface Shaders\HardSurface Free Cut Out Specular.shader" />
+     <None Include="Assets\hazelwoodloft\Hard Surface\HardSurface Shaders\HardSurface SFX Depth Write Only.shader" />
+     <None Include="Assets\hazelwoodloft\Hard Surface\HardSurface Shaders\HardSurface Free Transparent Specular.shader" />
+     <None Include="Assets\hazelwoodloft\Shaders\Mobile-Lightmap-Unlit DOF.shader" />
+     <None Include="Assets\hazelwoodloft\Geometry\Materials\Floor_reflective_data_MirrorReflection\MirrorReflection.shader" />
+     <None Include="Assets\hazelwoodloft\Hard Surface\HardSurface Shaders\HardSurfacePro Hidden Front Transparent Diffuse.shader" />
+     <None Include="Assets\hazelwoodloft\Hard Surface\HardSurface Shaders\HardSurface Free Opaque.shader" />
+     <None Include="Assets\hazelwoodloft\Hard Surface\HardSurface Shaders\HardSurface Free Cut Out Diffuse.shader" />
+     <None Include="Assets\hazelwoodloft\Hard Surface\HardSurface Shaders\HardSurfacePro Hidden Front Cut Out Opaque Bump.shader" />
+     <None Include="Assets\hazelwoodloft\Hard Surface\HardSurface Shaders\HardSurfacePro Hidden Front Transparent Bump.shader" />
+     <None Include="Assets\hazelwoodloft\Geometry\Materials\Floor_reflective_data\floor_PlanarReflectionWithLightmap.shader" />
+     <None Include="Assets\hazelwoodloft\Hard Surface\HardSurface Shaders\HardSurface Free Cut Out Opaque Bump.shader" />
+     <None Include="Assets\hazelwoodloft\Shaders\glass_correct1.shader" />
+     <None Include="Assets\hazelwoodloft\Geometry\Materials\HardSurface Free Transparent.shader" />
+     <None Include="Assets\hazelwoodloft\Geometry\Materials\no_fog_code.shader" />
+     <None Include="Assets\hazelwoodloft\Hard Surface\HardSurface Shaders\HardSurface Free Cut Out Opaque Specular.shader" />
+     <None Include="Assets\hazelwoodloft\Hard Surface\HardSurface Shaders\HardSurface Free Opaque Bump.shader" />
+     <None Include="Assets\hazelwoodloft\Hard Surface\HardSurface Shaders\HardSurface Free Cut Out Opaque Diffuse.shader" />
+     <None Include="Assets\hazelwoodloft\Hard Surface\HardSurface Shaders\HardSurfacePro Hidden Front Cut Out Bump.shader" />
+     <None Include="Assets\hazelwoodloft\Shaders\Mobile-VertexLit-NeverBlur.shader" />
      <Reference Include="UnityEngine">
      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.2.0a9\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
      </Reference>
@@ -681,11 +734,11 @@
      <Reference Include="Unity.PlasticSCM.Editor">
      <HintPath>C:\Users\ap007\MrAlphaMayor\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll</HintPath>
      </Reference>
-     <Reference Include="Unity.Timeline.Editor">
-     <HintPath>C:\Users\ap007\MrAlphaMayor\Library\ScriptAssemblies\Unity.Timeline.Editor.dll</HintPath>
-     </Reference>
      <Reference Include="Unity.VisualScripting.Shared.Editor">
      <HintPath>C:\Users\ap007\MrAlphaMayor\Library\ScriptAssemblies\Unity.VisualScripting.Shared.Editor.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.Timeline.Editor">
+     <HintPath>C:\Users\ap007\MrAlphaMayor\Library\ScriptAssemblies\Unity.Timeline.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.AdaptivePerformance">
      <HintPath>C:\Users\ap007\MrAlphaMayor\Library\ScriptAssemblies\Unity.AdaptivePerformance.dll</HintPath>
@@ -705,9 +758,6 @@
      <Reference Include="Unity.VisualScripting.Core">
      <HintPath>C:\Users\ap007\MrAlphaMayor\Library\ScriptAssemblies\Unity.VisualScripting.Core.dll</HintPath>
      </Reference>
-     <Reference Include="UnityEngine.UI">
-     <HintPath>C:\Users\ap007\MrAlphaMayor\Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
-     </Reference>
      <Reference Include="Unity.AdaptivePerformance.Profiler.Editor">
      <HintPath>C:\Users\ap007\MrAlphaMayor\Library\ScriptAssemblies\Unity.AdaptivePerformance.Profiler.Editor.dll</HintPath>
      </Reference>
@@ -719,6 +769,9 @@
      </Reference>
      <Reference Include="Unity.AdaptivePerformance.Simulator.Editor">
      <HintPath>C:\Users\ap007\MrAlphaMayor\Library\ScriptAssemblies\Unity.AdaptivePerformance.Simulator.Editor.dll</HintPath>
+     </Reference>
+     <Reference Include="UnityEngine.UI">
+     <HintPath>C:\Users\ap007\MrAlphaMayor\Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
      </Reference>
      <Reference Include="Unity.AdaptivePerformance.UI.Editor">
      <HintPath>C:\Users\ap007\MrAlphaMayor\Library\ScriptAssemblies\Unity.AdaptivePerformance.UI.Editor.dll</HintPath>
@@ -753,11 +806,11 @@
      <Reference Include="Unity.AdaptivePerformance.Editor">
      <HintPath>C:\Users\ap007\MrAlphaMayor\Library\ScriptAssemblies\Unity.AdaptivePerformance.Editor.dll</HintPath>
      </Reference>
-     <Reference Include="Unity.VSCode.Editor">
-     <HintPath>C:\Users\ap007\MrAlphaMayor\Library\ScriptAssemblies\Unity.VSCode.Editor.dll</HintPath>
-     </Reference>
      <Reference Include="Unity.VisualScripting.State">
      <HintPath>C:\Users\ap007\MrAlphaMayor\Library\ScriptAssemblies\Unity.VisualScripting.State.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.VSCode.Editor">
+     <HintPath>C:\Users\ap007\MrAlphaMayor\Library\ScriptAssemblies\Unity.VSCode.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Notifications.Android">
      <HintPath>C:\Users\ap007\MrAlphaMayor\Library\ScriptAssemblies\Unity.Notifications.Android.dll</HintPath>

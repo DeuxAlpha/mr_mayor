@@ -500,6 +500,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1016836064, guid: e384c1421e80740499361e10e5affae7, type: 3}
+      propertyPath: m_Center.y
+      value: -0.9
+      objectReference: {fileID: 0}
     - target: {fileID: 314898343111534686, guid: e384c1421e80740499361e10e5affae7,
         type: 3}
       propertyPath: m_RootOrder

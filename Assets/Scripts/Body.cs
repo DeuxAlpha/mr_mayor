@@ -34,4 +34,10 @@ public class Body : MonoBehaviour
     {
         _bodyLeftRight += input;
     }
+
+    public void RequestEqualDirection(Transform requestor)
+    {
+        transform.localRotation = Quaternion.Euler(requestor.right.x, requestor.forward.z, requestor.up.y);
+
+    }
 }

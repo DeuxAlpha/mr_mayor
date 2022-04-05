@@ -23,7 +23,7 @@ public class KeyboardMovementBehaviour : MonoBehaviour
         var currentTransform = transform;
         var move = currentTransform.right * x + currentTransform.forward * z;
 
-        controller.Move(move * (Input.GetKeyDown(KeyCode.LeftShift) ? speed + additionalSprintSpeed : speed) * Time.deltaTime);
+        controller.Move(move * speed * Time.deltaTime);
 
         var jumpRequest = Input.GetButtonDown("Jump");
 

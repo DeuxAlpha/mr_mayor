@@ -25,7 +25,7 @@ public class MouseHeadLook : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E)) alertMode = !alertMode;
+        SetAlertMode();
         var mouseX = Input.GetAxis("Mouse X") * SanitizedMouseSensitivity * Time.deltaTime;
         ThinkLookLeftRight(mouseX);
         var mouseY = Input.GetAxis("Mouse Y") * SanitizedMouseSensitivity * Time.deltaTime;
@@ -35,22 +35,34 @@ public class MouseHeadLook : MonoBehaviour
         AdjustHead();
     }
 
+    private void SetAlertMode()
+    {
+        alertMode = Input.GetKeyDown(KeyCode.LeftShift);
+    }
+
     /// <summary></summary>
     /// <returns>The amount by which the body has been requested to change. Positive values mean right, negative mean left.</returns>
     private float RequestHorizontalBodyAdjustment()
     {
         if (!_requestBodyTurnOnHorizontalTurnThresholdReached) return 0.0001f;
-
-        var absRotation = Mathf.Abs(_headHorizontalRotation);
-        if (absRotation > headHorizontalClamp - _headHorizontalClampThreshold)
+        if (alertMode)
         {
-            var overFlowAmount = absRotation - (headHorizontalClamp - _headHorizontalClampThreshold);
-            var directionRequest = 
-                _headHorizontalRotation > 0 ? BodyRotationRequestDirection.Right :
-                _headHorizontalRotation < 0 ? BodyRotationRequestDirection.Left :
-                BodyRotationRequestDirection.Dismissed;
-            playerBody.HandleRotationRequest(directionRequest, overFlowAmount);
-            return directionRequest == BodyRotationRequestDirection.Right ? -overFlowAmount : overFlowAmount;
+            // TODO: Bugged, Doesn't work
+            // playerBody.RequestEqualDirection(transform);
+        }
+        else
+        {
+            var absRotation = Mathf.Abs(_headHorizontalRotation);
+            if (absRotation > headHorizontalClamp - _headHorizontalClampThreshold)
+            {
+                var overFlowAmount = absRotation - (headHorizontalClamp - _headHorizontalClampThreshold);
+                var directionRequest = 
+                    _headHorizontalRotation > 0 ? BodyRotationRequestDirection.Right :
+                    _headHorizontalRotation < 0 ? BodyRotationRequestDirection.Left :
+                    BodyRotationRequestDirection.Dismissed;
+                playerBody.HandleRotationRequest(directionRequest, overFlowAmount);
+                return directionRequest == BodyRotationRequestDirection.Right ? -overFlowAmount : overFlowAmount;
+            }   
         }
 
         return 0.0001f;
